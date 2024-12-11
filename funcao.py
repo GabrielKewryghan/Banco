@@ -1,14 +1,12 @@
 #Declarando uma função
-def bom_dia():
-    print("Bom Dia!")
+def saudacoes(hora_do_dia): #Exibir a saudação conrrespodente a hora do dia
+    if (hora_do_dia >= 0) and (hora_do_dia <= 12):
+        print("Bom Dia!")
+    elif (hora_do_dia >= 12) and (hora_do_dia <= 18):
+        print("Boa Noite!")
+    
 
-def boa_noite():
-    print("Boa Noite!")
+#Fora da Função
+resposta = int(input("digite que horas são: "))
 
-def boa_tarde():
-    print("Boa Tarde!")
-
-#Chamando as funções
-bom_dia()
-boa_noite()
-boa_tarde()
+saudacoes(resposta)
